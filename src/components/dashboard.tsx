@@ -5,9 +5,7 @@ export default async function DashboardStats() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {/* CARD 1: CUSTOMERS (Tono Morado) */}
       <div className="relative group overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-sm transition-all hover:border-purple-500/50 hover:shadow-[0_0_30px_-10px_rgba(168,85,247,0.3)]">
-        {/* Luz ambiental de fondo */}
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-purple-600/20 blur-3xl transition-all group-hover:bg-purple-600/30"></div>
 
         <div className="relative z-10 flex items-center justify-between">
@@ -15,11 +13,10 @@ export default async function DashboardStats() {
             <h3 className="text-gray-400 text-sm font-medium tracking-wide uppercase">
               Total Customers
             </h3>
-            <p className="mt-2 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-300">
+            <p className="mt-2 text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-white to-purple-300">
               {stats.customerCount}
             </p>
           </div>
-          {/* Icono decorativo */}
           <div className="p-3 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +38,6 @@ export default async function DashboardStats() {
         </div>
       </div>
 
-      {/* CARD 2: TICKETS (Tono Rosa) */}
       <div className="relative group overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-sm transition-all hover:border-pink-500/50 hover:shadow-[0_0_30px_-10px_rgba(236,72,153,0.3)]">
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-pink-600/20 blur-3xl transition-all group-hover:bg-pink-600/30"></div>
 
@@ -50,7 +46,7 @@ export default async function DashboardStats() {
             <h3 className="text-gray-400 text-sm font-medium tracking-wide uppercase">
               Total Tickets
             </h3>
-            <p className="mt-2 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-pink-300">
+            <p className="mt-2 text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-white to-pink-300">
               {stats.ticketCount}
             </p>
           </div>
@@ -76,7 +72,6 @@ export default async function DashboardStats() {
         </div>
       </div>
 
-      {/* CARD 3: AVERAGE (Gradiente Mixto) */}
       <div className="relative group overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-sm transition-all hover:border-indigo-500/50 hover:shadow-[0_0_30px_-10px_rgba(99,102,241,0.3)]">
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-indigo-600/20 blur-3xl transition-all group-hover:bg-indigo-600/30"></div>
 
@@ -85,7 +80,7 @@ export default async function DashboardStats() {
             <h3 className="text-gray-400 text-sm font-medium tracking-wide uppercase">
               Avg Tickets / Customer
             </h3>
-            <p className="mt-2 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-pink-200 to-white">
+            <p className="mt-2 text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-purple-200 via-pink-200 to-white">
               {stats.averageTicketsPerCustomer}
             </p>
           </div>
